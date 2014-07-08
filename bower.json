@@ -1,0 +1,9 @@
+{
+  "name": "xeno-view",
+  "version": "0.0.0",
+  "keywords": "seed, polymer, web-components",
+  "main": "xeno-view.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.1"
+  }
+}
