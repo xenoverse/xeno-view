@@ -1,4 +1,7 @@
-:host {
-  display: block;
-  color: red;
+::content xeno-course {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: transform 1s ease;
 }
