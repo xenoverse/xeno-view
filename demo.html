@@ -5,14 +5,22 @@
   <title>xeno-view Demo</title>
 
   <script src="../platform/platform.js"></script>
+  <link rel="import" href="../xeno-course/dist/xeno-course.html">
+  <link rel="import" href="../xeno-space/dist/xeno-space.html">
   <link rel="import" href="xeno-view.html">
 
 </head>
 <body unresolved>
 
-  <p>An `xeno-view` looks like this:</p>
+  <xeno-view>
+    <xeno-course>
+      <xeno-space></xeno-space>
 
-  <xeno-view></xeno-view>
+      <xeno-space></xeno-space>
+
+      <xeno-space></xeno-space>
+    </xeno-course>
+  </xeno-view>
 
 </body>
 </html>
