@@ -1,11 +1,14 @@
 Polymer 'xeno-view',
 
   world: null
+  spaces: null
   course: null
-  index: 0
+  index: null
 
   domReady: ->
     @world = @.querySelector 'xeno-course'
+    @spaces = @world.spaces
+
     @course = @world.course
 
     @index = 0
@@ -18,6 +21,9 @@ Polymer 'xeno-view',
 
   indexChanged: (oldIndex, newIndex) ->
     @moveTo newIndex
+
+    @spaces[oldIndex]?.classList.remove 'focus'
+    @spaces[newIndex]?.classList.add 'focus'
 
   moveTo: (index) ->
     location = @course[index]
